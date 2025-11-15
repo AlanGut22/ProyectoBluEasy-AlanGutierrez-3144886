@@ -42,17 +42,19 @@ header {
                 list-style: none;
 
                 li {
+                    padding: 0.6rem 0;
+
                     a {
                         text-decoration: none;
                         color: white;
-                        padding: 0.5rem 1.2rem;
                         font-weight: 600;
-                        margin: 0 0.3rem;
+                        padding: 0.5rem 0.8rem;
+                        border: 2px solid transparent;
                     }
 
                     a:hover {
                         color: #4BCAFF;
-                        padding: 0.5rem 1rem;
+                        padding: 0.5rem 0.8rem;
                         border: 2px solid #4BCAFF;
                     }
                 }
@@ -75,13 +77,14 @@ header {
             font-size: 2rem;
             font-weight: 300;
             width: fit-content;
+            text-align: center;
         }
     }
 }
 
 .seccion-1 {
     background-color: #4BCAFF;
-    padding: 10rem 18rem 4rem;
+    padding: 9rem 18rem 4rem;
     color: white;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -99,7 +102,7 @@ header {
 }
 
 .seccion-2 {
-    padding: 3rem 18rem;
+    padding: 4rem 18rem;
 
     .navbar-2 {
         color: #515F67;
@@ -118,12 +121,19 @@ header {
                 list-style: none;
 
                 li {
-                    padding: 1rem;
-
                     a {
                         text-decoration: none;
                         color: #515F67;
                         font-weight: 600;
+                        padding: 0.2rem 0.8rem;
+                        border: 2px solid transparent;
+                        margin: 0 0.5rem;
+                    }
+
+                    a:hover {
+                        color: #4BCAFF;
+                        padding: 0.2rem 0.8rem;
+                        border: 2px solid #4BCAFF;
                     }
                 }
             }
@@ -144,7 +154,7 @@ header {
 
 .seccion-3 {
     background-color: #515F67;
-    padding: 3rem 18rem;
+    padding: 4rem 18rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 5rem;
@@ -168,7 +178,7 @@ header {
             font-weight: 700;
             margin-top: 1rem;
             color: #353F46;
-            padding: 0.5rem 1.5rem;
+            padding: 0.5rem 1.7rem;
             border: 2px solid #353F46;
         }
     }
@@ -181,7 +191,7 @@ header {
 }
 
 .seccion-4 {
-    padding: 3rem 18rem;
+    padding: 4rem 18rem;
     background-color: #4BCAFF;
     color: white;
 
@@ -219,7 +229,7 @@ header {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         column-gap: 2.5rem;
-        row-gap: 1.5rem;
+        row-gap: 2rem;
         color: white;
 
         .iconos {
@@ -231,7 +241,7 @@ header {
 }
 
 .seccion-6 {
-    padding: 3rem 18rem;
+    padding: 4rem 18rem;
     color: #515F67;
 
     .encabezado {
@@ -266,7 +276,7 @@ header {
     background-image: url(../assets/images/bg_contact.png);
     background-position: center;
     background-size: cover;
-    padding: 3rem 18rem;
+    padding: 4rem 18rem 2rem;
     color: white;
 
     h2 {
@@ -300,7 +310,6 @@ header {
                 font-family: "Noto Sans", sans-serif;
                 border: 2px solid white;
                 color: white;
-                height: 100%;
             }
         }
 
@@ -322,7 +331,6 @@ header {
                 font-family: "Noto Sans", sans-serif;
                 border: 2px solid white;
                 color: white;
-                height: 100%;
             }
         }
 
@@ -381,7 +389,7 @@ header {
 }
 
 footer {
-    padding: 3rem 18rem;
+    padding: 4rem 18rem;
     background-color: #353F47;
     color: #515F67;
     display: flex;
@@ -394,6 +402,283 @@ footer {
             color: #515F67;
             font-weight: 600;
             text-decoration: none;
+        }
+    }
+}
+
+@media (max-width: 1279px) {
+    header {
+        .navbar {
+            padding: 2rem 4rem;
+        }
+
+        .titulo {
+            padding: 2rem 4rem;
+        }
+    }
+
+    .seccion-1 {
+        padding: 7rem 4rem 4rem;
+    }
+
+    .seccion-2 {
+        padding: 4rem;
+    }
+
+    .seccion-3 {
+        padding: 4rem;
+        column-gap: 3rem;
+    }
+
+    .seccion-4 {
+        padding: 4rem;
+    }
+
+    .seccion-5 {
+        padding: 4rem;
+    }
+
+    .seccion-6 {
+        padding: 4rem;
+    }
+
+    .seccion-7 {
+        padding: 4rem 4rem 2rem;
+
+        form {
+            column-gap: 4rem;
+
+            .input-1,
+            .input-2 {
+                height: auto;
+            }
+        }
+    }
+
+    footer {
+        padding: 4rem;
+    }
+}
+
+@media(max-width: 920px) {
+    header {
+        .navbar {
+            padding: 2rem 3rem;
+        }
+
+        .titulo {
+            padding: 2rem 3rem;
+        }
+    }
+
+    .seccion-1 {
+        padding: 5rem 3rem 3rem;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2.5rem;
+        column-gap: 2.5rem;
+    }
+
+    .seccion-2 {
+        padding: 3rem;
+
+        .navbar-2 {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+
+            nav {
+                align-self: center;
+            }
+        }
+    }
+
+    .seccion-3 {
+        padding: 3rem;
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+        column-gap: 0;
+    }
+
+    .seccion-4 {
+        padding: 3rem;
+    }
+
+    .seccion-5 {
+        padding: 3rem;
+
+        .contenedor {
+            column-gap: 2rem;
+
+            .iconos {
+                img {
+                    width: 23%;
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .seccion-6 {
+        padding: 3rem;
+    }
+
+    .seccion-7 {
+        padding: 3rem 3rem 1rem;
+
+        form {
+            grid-template-rows: repeat(4, 1fr);
+            row-gap: 2rem;
+            column-gap: 2rem;
+        }
+    }
+
+    footer {
+        padding: 3rem;
+    }
+}
+
+@media(max-width: 768px) {
+    header {
+        grid-template-rows: 25% 75%;
+
+        .navbar {
+            padding: 2rem;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+
+            ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .titulo {
+            padding: 2rem;
+
+            p {
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    .seccion-1 {
+        padding: 3rem 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+
+        .tarjetas {
+            text-align: center;
+        }
+    }
+
+    .seccion-2 {
+        padding: 2rem;
+
+        .navbar-2 {
+            padding-bottom: 1rem;
+
+            nav {
+                ul {
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+
+                    li {
+                        padding: 0.6rem 0;
+
+                        a {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .seccion-3 {
+        padding: 2rem;
+    }
+
+    .seccion-4 {
+        padding: 2rem;
+    }
+
+    .seccion-5 {
+        padding: 2rem;
+
+        .contenedor {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            row-gap: 1.5rem;
+
+            .iconos {
+                text-align: center;
+
+                img {
+                    width: 20%;
+                }
+            }
+        }
+    }
+
+    .seccion-6 {
+        padding: 2rem;
+    }
+
+    .seccion-7 {
+        padding: 2rem;
+
+        form {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(5, 1fr);
+            column-gap: 0;
+
+            .input-1 {
+                grid-column: 1/3;
+                grid-row: 3/4;
+            }
+
+            .input-2 {
+                grid-column: 1/3;
+                grid-row: 4/5;
+            }
+
+            p {
+                grid-column: 1/3;
+                grid-row: 1/2;
+            }
+
+            ul {
+                grid-column: 1/3;
+                grid-row: 2/3;
+            }
+
+            .textarea {
+                grid-row: 5/6;
+            }
+
+            .boton {
+                grid-row: 6/7;
+                text-align: center;
+
+                button {
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    footer {
+        padding: 2rem;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+
+        nav{
+            line-height: 2;
         }
     }
 }

@@ -373,17 +373,17 @@ header {
         .boton {
             grid-column: 1/2;
             grid-row: 4/5;
-        }
 
-        button {
-            padding: 1rem;
-            width: 80%;
-            background-color: #4BCAFF;
-            font-family: "Noto Sans", sans-serif;
-            font-size: 1rem;
-            font-weight: 600;
-            color: white;
-            border: none;
+            button {
+                padding: 1rem;
+                width: 80%;
+                background-color: #4BCAFF;
+                font-family: "Noto Sans", sans-serif;
+                font-size: 1rem;
+                font-weight: 600;
+                color: white;
+                border: none;
+            }
         }
     }
 }
@@ -540,7 +540,8 @@ footer {
 
 @media(max-width: 768px) {
     header {
-        grid-template-rows: 25% 75%;
+        grid-template-rows: 20% 80%;
+        height: 38rem;
 
         .navbar {
             padding: 2rem;
@@ -548,10 +549,22 @@ footer {
             justify-content: center;
             gap: 1rem;
 
-            ul {
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
+            nav {
+                ul {
+                    justify-content: center;
+                    align-items: center;
+
+                    li {
+                        a {
+                            padding: 0.5rem 0.7rem;
+                            font-size: 0.8rem;
+                        }
+
+                        a:hover {
+                            padding: 0.5rem 0.7rem;
+                        }
+                    }
+                }
             }
         }
 
@@ -559,7 +572,8 @@ footer {
             padding: 2rem;
 
             p {
-                font-size: 1.7rem;
+                font-size: 1.3rem;
+                padding: 0.5rem 1rem;
             }
         }
     }
@@ -582,7 +596,6 @@ footer {
 
             nav {
                 ul {
-                    flex-wrap: wrap;
                     align-items: center;
                     justify-content: center;
 
@@ -591,10 +604,21 @@ footer {
 
                         a {
                             margin: 0;
+                            padding: 0.5rem 0.7rem;
+                            font-size: 0.8rem;
+                        }
+
+                        a:hover {
+                            padding: 0.5rem 0.7rem;
                         }
                     }
                 }
             }
+        }
+
+        .tabla-imagenes {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
         }
     }
 
@@ -604,6 +628,10 @@ footer {
 
     .seccion-4 {
         padding: 2rem;
+
+        p {
+            font-size: 1rem;
+        }
     }
 
     .seccion-5 {
@@ -626,6 +654,11 @@ footer {
 
     .seccion-6 {
         padding: 2rem;
+
+        .parrafo {
+            line-height: normal;
+            font-size: 1rem;
+        }
     }
 
     .seccion-7 {
@@ -633,19 +666,21 @@ footer {
 
         form {
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(5, 1fr);
+            grid-template-rows: repeat(5, auto);
+            column-gap: 0;
 
             .input-1 {
                 grid-column: 1/2;
                 grid-row: 3/4;
                 height: 100%;
+                justify-content: center;
 
                 label {
-                    padding-bottom: 1.5rem;
+                    padding-bottom: 1rem;
                 }
 
                 input {
-                    height: 100%;
+                    height: auto;
                 }
             }
 
@@ -653,13 +688,14 @@ footer {
                 grid-column: 1/2;
                 grid-row: 4/5;
                 height: 100%;
+                justify-content: center;
 
                 label {
-                    padding-bottom: 1.5rem;
+                    padding-bottom: 1rem;
                 }
 
                 input {
-                    height: 100%;
+                    height: auto;
                 }
             }
 
@@ -676,19 +712,20 @@ footer {
             .textarea {
                 grid-column: 1/2;
                 grid-row: 5/6;
+                justify-content: center;
 
                 label {
-                    padding-bottom: 1.5rem;
+                    padding-bottom: 1rem;
+                }
+
+                textarea {
+                    height: auto;
                 }
             }
 
             .boton {
                 grid-row: 6/7;
                 text-align: center;
-
-                button {
-                    width: 80%;
-                }
             }
         }
     }
@@ -701,6 +738,138 @@ footer {
 
         nav {
             line-height: 2;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media(max-width: 480px) {
+    header {
+        grid-template-rows: 25% 75%;
+        height: 30rem;
+
+        .navbar {
+            padding: 1rem;
+
+            nav {
+                width: 100%;
+
+                ul {
+                    justify-content: space-between;
+
+                    li {
+                        a {
+                            padding: 0;
+                            border: none;
+                        }
+
+                        a:hover {
+                            padding: 0;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .titulo {
+            padding: 2rem;
+
+            p {
+                font-size: 1.3rem;
+                padding: 0.5rem 1rem;
+            }
+        }
+    }
+
+    .seccion-2 {
+        padding: 1.5rem;
+
+        .navbar-2 {
+
+            nav {
+                width: 100%;
+
+                ul {
+                    justify-content: space-between;
+
+                    li {
+                        padding: 0.6rem 0;
+
+                        a {
+                            padding: 0;
+                            border: none;
+                        }
+
+                        a:hover {
+                            padding: 0;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tabla-imagenes {
+            gap: 1rem;
+        }
+    }
+
+    .seccion-3 {
+        row-gap: 2rem;
+    }
+
+    .seccion-5 {
+        .contenedor {
+            .iconos {
+                img {
+                    width: 23%;
+                }
+            }
+        }
+    }
+
+    .seccion-7 {
+        form {
+            .input-1 {
+
+                input {
+                    padding: 0.7rem;
+                }
+            }
+
+            .input-2 {
+
+                input {
+                    padding: 0.7rem;
+                }
+            }
+
+            .textarea {
+
+                textarea {
+                    padding: 0.7rem;
+                }
+            }
+
+            .boton {
+                button {
+                    padding: 0.7rem;
+                }
+            }
+        }
+    }
+
+    footer {
+        padding: 1.3rem;
+
+        nav {
+            line-height: 2;
+            font-size: 0.7rem;
+        }
+
+        p {
+            font-size: 0.8rem;
         }
     }
 }

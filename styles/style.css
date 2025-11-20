@@ -512,7 +512,7 @@ footer {
 
             .iconos {
                 img {
-                    width: 23%;
+                    width: 4rem;
                     padding-right: 0.5rem;
                 }
             }
@@ -644,10 +644,6 @@ footer {
 
             .iconos {
                 text-align: center;
-
-                img {
-                    width: 20%;
-                }
             }
         }
     }

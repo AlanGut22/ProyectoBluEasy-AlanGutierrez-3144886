@@ -861,11 +861,11 @@ footer {
     }
 
     footer {
-        padding: 1.3rem;
+        padding: 1.3rem 1rem;
 
         nav {
             line-height: 2;
-            font-size: 0.7rem;
+            font-size: 0.73rem;
         }
 
         p {
